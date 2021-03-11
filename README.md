@@ -6,3 +6,6 @@ after signing in we land on menu page
 Featured item on navbar lands us to the featured items ,where some items are availabe for the order,
 clicking on order links us to the payment details page, where the payment procedure takes palce
 and after clicking pay button, takes us the thank you page 
+# veena-nadagiri.github.io
+# veena-nadagiri.github.io
+# veena-nadagiri.github.io
