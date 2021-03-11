@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bridestory.com</title>
+</head>
+<body>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        
+      .video{
+          object-fit: cover;
+          height: 100%;
+          width: 100%;
+          position: fixed;
+          z-index: -1;
+          filter: opacity(70%);
+      }
+      @media(min-aspect-ratio:16/9) {
+          .video {
+              width: 100%;
+              height: auto;
+          }
+      }
+      @media(max-aspect-ratio:16/9) {
+          .video {
+              width: auto;
+              height: 100%;
+          }
+      }
+      @media(max-width: width 767px) {
+          .video {
+              display: none;
+          }
+      }
+      .text{
+          color: white;
+          position:absolute;
+          top: 20%;
+          left: 10%;
+      }
+      .typing{
+          position: relative;;
+        
+      }
+      
+       .typing::after{
+          content: " ";
+          right: -40px;
+          width: 1px;
+          height: 5%;
+          border-right: 2px solid black;
+          animation: blink 0.5s infinite ease;
+      }
+       
+      @keyframes blink{
+
+          0%{
+              opacity: 0;
+          }
+          100%{
+              opacity: 1;
+          }
+      }
+      .right h2{
+          margin: 0 0 20px;
+          padding: 0;
+          text-transform: capitalize;
+          font-weight: bolder;
+
+      }
+      .right h4{
+          display:table-cell;
+          position: relative;
+          padding: 7px;
+          font-weight: bolder;
+      }
+      .text2{
+        color: rgb(5, 5, 5);
+        position: relative;;
+        
+      }
+      button{
+          padding: 5px;
+          margin: 5px;
+          /* background: whitesmoke; */
+          justify-content: space-arounds;
+          box-shadow: 2px 2px 1px 2.5px rgb(162, 161, 161);
+          border-style:unset;
+          border-radius: 5px; 
+          width: 40%;
+          /* letter-spacing: 2px; */
+      }
+      .lines{
+          width: 100%;
+          position: relative;
+      }
+      .lines::before , .lines::after{
+          content: "";
+        border-bottom: 2px solid #bbb; 
+        margin: auto;
+         height: 1px; 
+         padding-top: 10px; 
+         width:40%;
+         position: absolute;
+      }
+       .lines::after {
+        left: 0;
+      }
+      .lines::before {
+          right: 0;
+      }
+      .form{
+          position: relative;
+          height: 50px;
+      }
+      
+      .form input{
+          margin-top: 20px;
+          margin-bottom: 20px;
+          border: none;
+          font-size: large;
+          position: relative;
+          width: 100%;
+          height: 100%;
+          /* background: #2858b8; */
+          padding-top: 15px ;
+          outline: none;
+        }
+        .form label{
+            position: absolute;
+            bottom: 0px;
+            left: 0%;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            /* border-bottom: 1px solid gray; */
+            
+        }
+        .form label::after{
+            content: "";
+            left: 0px;
+            bottom: -1px;
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            /* border-bottom: 2px solid rgb(60, 60, 190); */
+            transform: translateX(-100%);
+        }
+        .content-name{
+            position: absolute;
+            bottom: 5px;
+            left: 0px;
+            transition: all .3s ease;
+        }
+        .form input:focus + .label-name .content-name .label-password,
+        .form input:valid + .label-name .content-name .label-password{
+            transform: translateY(-150%);
+            color: chartreuse;
+            font-size: 14px;
+
+        }
+
+
+     
+    </style>
+    
+        <video  autoplay muted loop class="video">
+            <source src="video.mp4" type="video/mp4"> 
+        </video>
+        <section class="section">
+        <div class="text">
+            <h1 style="padding-bottom: 20px;">join bridestory and get access to </h1>
+            <h1 class="typing"> </h1>
+            <div class="right"
+            style="position: relative;
+             max-width:500px;transform: translate(-50%,-50%);
+            background: rgba(255, 255, 255,.4);
+            box-shadow: 0 5px 15px rgba(0, 0,0 .5);top: 45%;
+            margin-left:215px; margin-top: 150px;
+            justify-content: space-around;
+            padding:15px;height:120px;border-radius: 15px; -moz-border-radius: 15px;">
+                <h2>Use Bridestory Pay and enjoy the benefits:</h2>
+                    <h4>0% CC Installment
+                    for up to 24 months</h4>
+                    <h4>More
+                    Payment Options</h4>
+                    <h4>Easy and Secure
+                    Payment</h4>
+            </div>
+        </div>
+      
+    </section>
+    <section class="section2" style="position: absolute;
+        top: 20%;right:10%;
+        background-color: whitesmoke;
+        padding: 40px;
+        border-radius: 15px;
+        -moz-border-radius:15px;
+        text-align: center; height:450px;">
+        <div class="text2">
+            <h1 style="text-align: center;
+            letter-spacing: 2px; font-style: italic;
+            font-weight: bolder;
+            font-size: 48px;padding-bottom: 2px;">bridestory</h1>
+            <h5 style="padding-bottom: 35px;">Making Dream Wedding Possible</h5>
+            <p style="text-align: center; padding-bottom: 15px;">It takes less than a minute to start your <br> wedding journey.</p>
+            <p>login with:</p>
+            <button style="background: #2858b8;">facebook</button>
+            <button style="background: #f55a51;">Google</button>
+           </div>
+            <div>
+                <div class="lines">
+                <h6 style="height:1px ; width:3px ; left:0 ; right:0 ; top:0 ;bottom:0 ;margin:auto ; padding-top: 4px;">Or</h6>
+                </div>
+            </div>
+            <div class="form">
+                
+                <input id="em" type="email" autocapitalize="on" autocomplete="off" >
+                <label for="em" class="label-name"></label>
+                <span class="content-name">Name</span>
+                <input id="pd" type="password" required >
+                <label for="pd" class="label-password"></label>
+                <button id="sb" type="submit" > Sign Up or Login</button>
+                
+            </div>
+    </section>
+    <script src="code.js"></script>
+</body>
+</html>
