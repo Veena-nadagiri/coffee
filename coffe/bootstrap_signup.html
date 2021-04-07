@@ -11,31 +11,39 @@
                 <path fill-rule="evenodd" d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2zm4.5 11h4a.5.5 0 0 0 .5-.5v-4a.5.5 0 0 0-1 0v2.793L5.854 5.146a.5.5 0 1 0-.708.708L9.293 10H6.5a.5.5 0 0 0 0 1z"/>
               </svg>
         </nav>
-        <!-- <style>
-            .fm{
-                margin: auto;
-            }
-        </style> -->
+         <style>
+            input {
+                outline: none;
+                border: 0px;
+                border-bottom: 1px solid grey;
+                padding-bottom: 12px;
+                margin-bottom: 36px;
+                width: 100%;
+             }
+             form{
+                 margin-top: 40px;
+                 width: 100%;
+             }
+        </style>
+        
         
     
-    <div class="container">
-        <div class="jumbotron">
+    <div class="main" style="margin-left: auto; margin-right: auto; width: 600px;"align="center">
+        <div class="top" style="padding: 30px;margin-top: 10px;margin-bottom: 10px;background-color: lightgrey;">
             <h1 class="display-4"> Log in </h1>
             <hr class="my-4">
             <p>enter your email and password below to log in to Coffee Lover</p>
         </div>
-        <form class="fm" action="menu_page.html" method="GET">
-           <label for="em"> Email Address:</label><br>
-           <input type="email" name="email" id="em" required>
-           <p></p> 
-           <label for="pwd"> Password:</label><br>
-           <input type="password" name="password" id="pwd" required><br>
-           <p></p>
-           <input type="checkbox" name="" id="ck">
+        <form class="fm" action="/Users/veena/Documents/web_dev/CSS_leve_one/menu_page.html" method="GET">
+           <input type="email" name="email" id="em" placeholder="Email Address" required><br> 
+           <input type="password" name="password" id="pwd" placeholder="Password" required><br>
+           
+           <input type="checkbox" name="" id="ck" style="margin-bottom:0px ;">
            <label for="ck"> keep me logged in</label> <br>
 
            
-           <input type="submit" name="" id="" value="submit">
+            <button
+                style="background-color: #0056ff; padding-top: 12px;padding-bottom: 12px;padding-right: 24px;padding-left: 24px; font-size: 18px;color: #fff; border: none;">Register</button>
         </form>
     </div>
     </body>
