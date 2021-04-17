@@ -24,10 +24,19 @@
                  margin-top: 40px;
                  width: 100%;
              }
-            button:hover{
-                background-color:lightgreen;
-                color:white;
-            }
+             #btn{
+                background-color: #0056ff;
+                padding:12px 24px;
+                font-size: 18px;
+                color: #fff;
+                border: none;
+                border-radius: 8px;
+                outline: none;
+             }
+             #btn:hover{
+                 background-color: greenyellow;
+                 color: honeydew;
+             }
         </style>
         
     
@@ -38,15 +47,14 @@
             <p>enter your email and password below to log in to Coffee Lover</p>
         </div>
         <form class="fm" action="/Users/veena/Documents/web_dev/CSS_leve_one/menu_page.html" method="GET">
-           <input type="email" name="email" id="em" placeholder="Email Address" required><br> 
-           <input type="password" name="password" id="pwd" placeholder="Password" required><br>
+           <input type="email" name="email" id="em" placeholder="Email Address" required  ><br> 
+           <input type="password" name="password" id="pwd" placeholder="Password" required maxlength="8"><br>
            
            <input type="checkbox" name="" id="ck" style="margin-bottom:0px ;">
            <label for="ck"> keep me logged in</label> <br>
 
            
-            <button
-                style="background-color: #0056ff; padding-top: 12px;padding-bottom: 12px;padding-right: 24px;padding-left: 24px; font-size: 18px;color: #fff; border: none;border-radius:8px">Register</button>
+            <button id="btn">Register</button>
         </form>
     </div>
     </body>
